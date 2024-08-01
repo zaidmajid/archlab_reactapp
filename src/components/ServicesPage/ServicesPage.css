@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
+.services-page {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.Service-page__hero-section {
+  width: 100%;
+  height: 610px;
+  background-image: url('/src/assets/images/Service.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.Service-page__hero-section h1 {
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  margin: 0;
+  z-index: 1;
+  letter-spacing: 1px;
+  font-size: 60px;
+  color: #000000;
+  line-height: 1.1;
+  font-weight: 400 !important;
+}
+
+.breadcrumb {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.team-page__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.services-container h1 {
+  font-size: 24px;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  margin-bottom: 1rem;
+  color: #96bb7c;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0.2rem 0;
+  grid-column: span 4;
+}
+
+.services-container h1::before,
+.services-container h1::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 20%;
+  height: 1px;
+  background-color: #96bb7c;
+}
+
+.services-container h1::before {
+  left: 0;
+  margin-left: 10%;
+}
+
+.services-container h1::after {
+  right: 0;
+  margin-right: 10%;
+}
+
+.service-item {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.service-item.animate-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-icon {
+  font-size: 3.5rem;
+  color: #96bb7c;
+  margin-bottom: -2px;
+}
+
+.service-item h3 {
+  line-height: 1.5;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.service-item p {
+  font-size: 16px;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .Service-page__hero-section {
+    height: 300px;
+  }
+
+  .Service-page__hero-section h1 {
+    font-size: 42px;
+  }
+
+  .breadcrumb {
+    font-size: 16px;
+    top: 90px;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .services-container h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Service-page__hero-section {
+    height: 250px;
+  }
+
+  .Service-page__hero-section h1 {
+    font-size: 36px;
+  }
+
+  .breadcrumb {
+    font-size: 14px;
+    top: 70px;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-container h1 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Service-page__hero-section {
+    height: 200px;
+  }
+
+  .Service-page__hero-section h1 {
+    font-size: 28px;
+  }
+
+  .breadcrumb {
+    font-size: 12px;
+    top: 50px;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .services-container h1 {
+    font-size: 16px;
+  }
+}
+
+.hero-content {
+  z-index: 1;
+  text-align: center;
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
+.service {
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  padding: 0rem;
+  background-color: transparent;
+  margin: -5px;
+  width: 101%; 
+  box-sizing: border-box;
+}
+
+.info-sections {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #96bb7c;
+}
+
+.info-box {
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  flex: 1 1 calc(25% - 1rem);
+  background-color: #96bb7c;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0.5rem; 
+}
+
+.info-icon,
+.info-box h2,
+.info-box p {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.info-box.animate-up .info-icon,
+.info-box.animate-up h2,
+.info-box.animate-up p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.info-icon {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.info-box h2 {
+  margin-bottom: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.info-box p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .info-box {
+    flex: 1 1 100%;
+    padding: 1rem; 
+  }
+
+  .info-icon {
+    font-size: 2rem; 
+  }
+
+  .info-box h2 {
+    font-size: 18px; 
+  }
+
+  .info-box p {
+    font-size: 14px; 
+  }
+}

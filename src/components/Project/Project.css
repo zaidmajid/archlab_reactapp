@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
+.header-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.header-in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.text-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.text-in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-container {
+  padding: 2rem;
+  background-color: #ffffff;
+  margin-top: 30px;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 80px;
+}
+
+.project-container h1 {
+  font-size: 18px;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  margin-bottom: 0;
+  color: #96bb7c;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0.2rem 0;
+}
+
+
+.project-container h2 {
+  font-size: 60px;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 100px;
+}
+
+.project-image {
+  flex: 0.75;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image img {
+  width: 80%;
+  height: auto;
+  max-width: 500px;
+  max-height: 593px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  transform: scale(1); /* Default scale */
+}
+
+.project-image.image-left img:hover,
+.project-image.image-right img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.project-text {
+  flex: 1;
+  padding: 1rem;
+}
+
+.text-right {
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.text-left {
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.project-text h3 {
+  font-family: "Nunito Sans", Arial, sans-serif;
+  display: block;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 5px;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 10px;
+  position: relative;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  transform: translateY(50px); 
+  opacity: 0;
+}
+
+.project-text h3.text-in-view {
+  transform: translateY(0); 
+  opacity: 1;
+}
+
+.project-text h4 {
+  font-family: "Nunito Sans", Arial, sans-serif;
+  font-size: 60px;
+  line-height: 1.3;
+  color: #000000;
+  margin: 20px 0 10px 0;
+  font-weight: 100;
+  position: relative;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  transform: translateY(50px); 
+  opacity: 0;
+}
+
+.project-text h4.text-in-view {
+  transform: translateY(0); 
+  opacity: 1;
+}
+
+.project-text p {
+  margin-bottom: 1rem;
+  font-family: "Nunito Sans", Arial, sans-serif;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #666666;
+  position: relative;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  transform: translateY(50px); 
+  opacity: 0;
+}
+
+.project-text p.text-in-view {
+  transform: translateY(0); 
+  opacity: 1;
+}
+
+.view-portfolio {
+  color: #96bb7c;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 3px;
+  transition: color 0.3s ease;
+  position: relative;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  transform: translateY(50px); 
+  opacity: 0;
+}
+
+.view-portfolio:hover {
+  color: #333;
+}
+
+.view-portfolio.text-in-view {
+  transform: translateY(0); 
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-item {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 50px;
+  }
+
+  .project-text {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .project-image {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .project-image img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .project-text h3 {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+  }
+
+  .project-text h4 {
+    font-size: 25px;
+    line-height: 1.2;
+    margin: 15px 0 5px 0;
+  }
+
+  .project-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .view-portfolio {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .project-container {
+    padding: 1rem;
+    margin: 0 10px;
+  }
+
+  .project-container h1 {
+    font-size: 16px;
+  }
+
+  .project-container h1::before,
+  .project-container h1::after {
+    width: 15%;
+  }
+
+  .project-container h2 {
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-item {
+    margin-top: 40px;
+    margin-bottom: 2rem;
+  }
+
+  .project-image img {
+    width: 60%;
+    height: 100px;
+  }
+
+  .project-text h3 {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+  }
+
+  .project-text h4 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .project-text p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .view-portfolio {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+}

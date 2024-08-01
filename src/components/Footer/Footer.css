@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
+.footer {
+    background-color: #1f1f1f;
+    color: #b3b3b3;
+    padding: 2rem 0;
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    text-align: center; 
+    width: 100%; 
+    margin: 0; 
+    position: relative; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto; 
+}
+
+.footer-section {
+    flex: 1 1 20%;
+    min-width: 220px;
+}
+
+.footer-section h3 {
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-section p {
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-section ul li a {
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 16px;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-section .social-icons {
+    margin-top: 20px;
+}
+
+.footer-section .social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+    color: #b3b3b3;
+    transition: color 0.3s;
+}
+
+.footer-section .social-icons a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333333;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.footer-bottom p a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.footer-bottom p a:hover {
+    color: #ffffff;
+}
+
+.footer-section.contact ul li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer-section.contact ul li i {
+    margin-right: 10px;
+    color: #96bb7c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+    }
+}
